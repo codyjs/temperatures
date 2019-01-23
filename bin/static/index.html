@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="/app.js"></script>
+	</head>
+	<body>
+		<div id="GET">
+			<h1>GET</h1>
+			<button onclick="fetchTemps()">Fetch Temperatures</button>
+			<p>Results are printed below, as well as in the browser console.</p>
+			<pre id="results"></pre>
+		</div>
+		<form id="postForm">
+			<h1>POST</h1>
+			<p>View the browser's network tab to see request details.</p>
+			<label for="postValue">Temperature</label>
+			<input type="number" id="postValue" step="0.01" required />
+			<button type="submit">Create</button>
+		</form>
+		<form id="putForm">
+			<h1>PUT</h1>
+			<p>View the browser's network tab to see request details.</p>
+			<label for="putId">Id</label>
+			<input type="number" id="putId" required />
+			<label for="putValue">Temperature</label>
+			<input type="number" id="putValue" step="0.01" required />
+			<button type="submit">Update</button>
+		</form>
+		<form id="deleteForm">
+			<h1>DELETE</h1>
+			<p>View the browser's network tab to see request details.</p>
+			<label for="deleteId">Id</label>
+			<input type="number" id="deleteId" required />
+			<button type="submit">Delete</button>
+		</form>
+	</body>
+</html>
