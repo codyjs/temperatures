@@ -16,6 +16,6 @@ CREATE TABLE `temperature` (
 
 ## Running the App
 
-Run `gradle bootRun` and the app should start up after downloading any dependencies.
+Run `gradlew bootRun` and the app should start up after downloading any dependencies.
 
 Go to `localhost:8080` in a browser for a (very minimal) UI that can interact with the REST API. You can use the browser dev tools to inspect the HTTP requests.
